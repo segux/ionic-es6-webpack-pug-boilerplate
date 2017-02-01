@@ -1,7 +1,7 @@
 {
   "name": "ionic-es6-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "A simple Ionic App using ES6, AngularJS 1.4 and Webpack",
+  "description": "A simple Ionic App using ES6, AngularJS 1.4, Webpack and Pug",
   "main": "lib/index.js",
   "scripts": {
     "installCordova": "sh ./install_cordova.sh",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ByJC/ionic-es6-webpack-boilerplate.git"
+    "url": "git@github.com:segux/ionic-es6-webpack-pug-boilerplate.git"
   },
   "author": [
     {
@@ -29,6 +29,11 @@
       "name": "Julien RENAUX",
       "email": "contact@julienrenaux.fr",
       "url": "http://julienrenaux.fr/"
+    },
+    {
+      "name": "Jose Segura",
+      "email": "josesegurag90@gmail.com",
+      "url": ""
     }
   ],
   "license": "MIT",
@@ -43,21 +48,25 @@
     "expose-loader": "^0.6.0",
     "file-loader": "^0.8.1",
     "html-loader": "^0.2.3",
-    "html-webpack-plugin": "^1.5.0",
+    "html-webpack-plugin": "^2.24.1",
     "json-loader": "^0.5.1",
     "ng-annotate-loader": "~0.0.6",
     "path": "^0.4.9",
     "sass-loader": "^1.0.0",
     "style-loader": "^0.8.3",
     "util": "^0.10.3",
-    "webpack": "~1.10.0",
-    "webpack-dev-server": "~1.10.0"
+    "webpack": "~1.14.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "angular-translate": "^2.8.0",
+    "glob": "~5.0.5",
     "ionic-sdk": "^1.0.0",
     "lodash": "^3.9.3",
-    "glob": "~5.0.5",
-    "object-sizeof": "~1.0.0"
+    "node-sass": "^4.4.0",
+    "object-sizeof": "~1.0.0",
+    "pug": "^2.0.0-beta10",
+    "pug-loader": "^2.3.0",
+    "sass-loader": "^1.0.4"
   }
 }

@@ -1,0 +1,9 @@
+ion-view
+    ion-nav-title {{postCtrl.post.title}}
+    ion-content
+        ion-spinner(ng-if="!postCtrl.item")
+        .list.card(ng-if="postCtrl.item" style="margin: 0;")
+            .item.item-avatar
+                h2 {{::postCtrl.item.name}}
+            .item.item-body
+                p(ng-bind-html="::postCtrl.item.description")

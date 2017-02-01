@@ -1,5 +1,5 @@
 var path = require('path'),
-    libPath = path.join(__dirname, 'lib'),
+    libPath = path.join(__dirname, 'src'),
     pkg = require('./package.json'),
     webpack = require("webpack"),
     extend = require('util')._extend,
@@ -11,7 +11,8 @@ module.exports = extend(webpackConfig, {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             pkg: pkg,
-            template: path.join(libPath, 'index.html')
+            template: path.join(libPath, 'index.pug'),
+            inject: 'body',
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.DedupePlugin(),

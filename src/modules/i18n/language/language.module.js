@@ -3,6 +3,7 @@ import urlTranslateLoader from 'angular-translate/dist/angular-translate-loader-
 
 import LanguageConfig from './language.config.js';
 
-export default angular.module('prototype.language', ['pascalprecht.translate'])
-    .config(LanguageConfig)
-    .name;
+let module = angular.module('app.language', ['pascalprecht.translate'])
+        .config(LanguageConfig)
+    ;
+export default  module.name;
